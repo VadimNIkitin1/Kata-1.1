@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Kata 1.1</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title__img">
+        <img src="./img/bg.jpeg" alt="Title img" />
+        <img src="./img/logo.svg" class="logo" alt="" />
+      </div>
+      <main class="main">
+        <div class="container">
+          <h1 class="title">Get iintoo it today</h1>
+          <p class="subtitle">
+            There is no charge or obligation upon registration
+          </p>
+          <div class="socreg">
+            <div class="socreg__fb">Register with Facebook</div>
+            <div class="socreg__li">Register with LinkedIn</div>
+          </div>
+          <div class="or">OR</div>
+          <div class="register">
+            <input type="email" placeholder="" />
+            <label class="label__email">Email</label>
+            <input type="tel" placeholder="" />
+            <label class="label__tel">Phone</label>
+          </div>
+          <h2 class="title__inv">What type of investor are you?</h2>
+          <p class="subtitle__inv">Select type of investor you are below.</p>
+          <div class="radio__btn">
+            <p>
+              <input type="radio" name="inv" value="Individual" />Individual
+            </p>
+            <p><input type="radio" name="inv" value="Business" />Business</p>
+            <p><input type="radio" name="inv" value="IRA" />IRA</p>
+            <p><input type="radio" name="inv" value="Trust" />Trust</p>
+          </div>
+          <div class="tooltip"></div>
+          <div class="agree">
+            <input type="checkbox" /> I agree to the terms and receiving
+            notification from iintoo <a href="#!">View full terms</a>
+          </div>
+          <button class="create">Create account</button>
+        </div>
+      </main>
+    </header>
+  </body>
+</html>
