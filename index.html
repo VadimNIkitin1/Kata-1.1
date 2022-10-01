@@ -15,7 +15,7 @@
     <header class="header">
       <div class="title__img">
         <img src="./img/bg.jpeg" alt="Title img" />
-        <img src="./img/logo.svg" class="logo" alt="" />
+        <img src="./img/logo.svg" class="logo" alt="logo" />
       </div>
       <main class="main">
         <div class="container">
@@ -24,8 +24,8 @@
             There is no charge or obligation upon registration
           </p>
           <div class="socreg">
-            <div class="socreg__fb">Register with Facebook</div>
-            <div class="socreg__li">Register with LinkedIn</div>
+            <a class="socreg__fb" href="#!">Register with Facebook</a>
+            <a class="socreg__li" href="#!">Register with LinkedIn</a>
           </div>
           <div class="or">OR</div>
           <div class="register">
@@ -38,16 +38,33 @@
           <p class="subtitle__inv">Select type of investor you are below.</p>
           <div class="radio__btn">
             <p>
-              <input type="radio" name="inv" value="Individual" />Individual
+              <input type="radio" name="inv" value="Individual" id="1" />
+              <label for="1">Individual</label>
+              <span class="radio__btn_info">i</span>
             </p>
-            <p><input type="radio" name="inv" value="Business" />Business</p>
-            <p><input type="radio" name="inv" value="IRA" />IRA</p>
-            <p><input type="radio" name="inv" value="Trust" />Trust</p>
+            <p>
+              <input type="radio" name="inv" value="Business" id="2" />
+              <label for="2">Business</label>
+              <span class="radio__btn_info">i</span>
+            </p>
+            <p>
+              <input type="radio" name="inv" value="IRA" id="3" />
+              <label for="3">IRA</label>
+              <span class="radio__btn_info">i</span>
+            </p>
+            <p>
+              <input type="radio" name="inv" value="Trust" id="4" />
+              <label for="4">Trust</label>
+              <span class="radio__btn_info">i</span>
+            </p>
           </div>
           <div class="tooltip"></div>
           <div class="agree">
-            <input type="checkbox" /> I agree to the terms and receiving
-            notification from iintoo <a href="#!">View full terms</a>
+            <input type="checkbox" id="5" />
+            <label for="5">
+              I agree to the terms and receiving notification from iintoo</label
+            >
+            <a href="#!">View full terms</a>
           </div>
           <button class="create">Create account</button>
         </div>

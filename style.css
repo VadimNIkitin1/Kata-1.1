@@ -36,13 +36,13 @@ body {
   column-gap: 40px;
   margin-bottom: 50px;
 }
+
 .socreg__fb {
   padding: 10px;
 
   background-color: #255a9b;
   width: 250px;
   height: 44px;
-
   font-size: 14px;
   color: #eeeeee;
   cursor: pointer;
@@ -154,9 +154,10 @@ body {
 
 .radio__btn {
   display: flex;
-
   column-gap: 40px;
+  margin-bottom: 100px;
 }
+
 .radio__btn input {
   cursor: pointer;
   appearance: none;
@@ -170,11 +171,9 @@ body {
 
   top: 3px;
 }
-.radio__btn p::after {
-  content: "i";
+
+.radio__btn_info {
   display: inline-block;
-  top: 0;
-  right: 0;
   border: 1px solid #9e9e9e;
   border-radius: 50%;
   width: 11px;
@@ -185,8 +184,36 @@ body {
   margin-left: 5px;
   text-align: center;
   align-items: center;
+  line-height: 10px;
+  position: relative;
 }
+
+.radio__btn_info:hover::after {
+  visibility: visible;
+  opacity: 100;
+}
+
+.radio__btn_info::after {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  content: "I am natural person investing on my own behalf as a sole owner, join tenant, or tenant in common. ";
+  right: -100px;
+  top: 20px;
+  box-shadow: 0px 1px 2px #000;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 110%;
+  color: #9e9e9e;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s all;
+}
+
 .radio__btn p {
+  display: flex;
+  align-items: center;
   font-size: 16px;
 }
 
@@ -207,29 +234,4 @@ body {
   height: 40px;
   color: #eeeeee;
   border-radius: 5px;
-}
-.tooltip {
-  position: relative;
-  width: 250px;
-  height: 50px;
-  margin-bottom: 50px;
-}
-.tooltip::after {
-  content: "I am natural person investing on my own behalf as a sole owner, join tenant, or tenant in common. ";
-  position: absolute;
-  left: 0;
-  top: 10%;
-  box-shadow: 0px 1px 2px #000;
-  padding: 5px;
-  border-radius: 6px;
-  font-size: 14px;
-  color: #9e9e9e;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.2s all;
-}
-
-.tooltip:hover::after {
-  opacity: 1;
-  visibility: visible;
 }
